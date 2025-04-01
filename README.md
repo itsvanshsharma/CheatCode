@@ -1,113 +1,100 @@
-# CheatCode
+# CheatCode 🎮
 
-CheatCode is a web-based application designed to replicate and enhance the functionalities of LeetCode. It enables users to solve coding problems, visualize solutions through flow charts, and manage courses. The platform integrates React for the frontend and MongoDB for data management. CheatCode provides features like CRUD operations for questions, courses, users, and more.
+A modern web application built with a full-stack JavaScript architecture, designed to provide an interactive platform for developers and coding enthusiasts.
 
----
+## 🚀 Features
 
-## Features
+- Modern and responsive user interface
+- Full-stack JavaScript implementation
+- RESTful API architecture
+- Secure authentication and authorization
+- Real-time data updates
+- Cross-platform compatibility
 
-### 1. **Questions Management**
-- Add, edit, delete, and view coding questions.
-- Track solved and unsolved questions.
-- Associate questions with courses and companies.
+## 🛠️ Tech Stack
 
-### 2. **Courses Management**
-- Manage courses with details like name, price, and description.
-- Visualize courses sold.
+### Frontend
+- React.js
+- CSS3
+- HTML5
+- JavaScript (ES6+)
 
-### 3. **Flow Charts**
-- Generate flow charts to visualize solutions for coding problems.
+### Backend
+- Node.js
+- Express.js
+- MongoDB (Database)
+- RESTful APIs
 
-### 4. **User Management**
-- Handle both regular and pro users.
-- Pro users have additional features like tracking subscription status.
-
-### 5. **CRUD Operations**
-- Perform create, read, update, and delete operations across all collections in MongoDB.
-
----
-
-## MongoDB Collections
-
-### 1. **Questions**
-- Fields: `Q_id`, `Q_name`, `Q_explation`, `Q_input`, `Q_output`, `TypeOfQues`, `Sol`, `Company_name`, `Course_id`, `Status`, `SoftDelete`
-
-### 2. **User**
-- Fields: `U_id`, `U_name`, `U_email`, `U_dob`, `Status`, `softDelete`
-
-### 3. **TypeOfQues**
-- Fields: `T_id`, `T_name`
-
-### 4. **Difficulty**
-- Fields: `D_id`, `D_value`
-
-### 5. **Pro_users**
-- Fields: `P_id`, `P_name`, `P_email`, `P_dob`, `P_status`, `P_StartDate`, `P_endDate`
-
-### 6. **Company**
-- Fields: `Company_id`, `Company_name`
-
-### 7. **Course**
-- Fields: `Course_id`, `Course_name`, `Course_price`, `Course_description`, `Status`, `SoftDelete`
-
----
-
-## Technology Stack
-
-- **Frontend:** React.js
-- **Backend:** Express.js
-- **Database:** MongoDB
-- **Styling:** Bootstrap
-
----
-
-## Installation
+## 📦 Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/VedantHanda771/CheatCode.git
-   ```
+```bash
+git clone https://github.com/itsvanshsharma/CheatCode.git
+cd CheatCode
+```
 
-2. Navigate to the project directory:
-   ```bash
-   cd cheatcode
-   ```
+2. Install dependencies for both frontend and backend:
+```bash
+# Install root dependencies
+npm install
 
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+# Install frontend dependencies
+cd frontend
+npm install
 
-4. Set up MongoDB and configure the connection string in `.env` file:
-   ```env
-   MONGO_URI=<your-mongodb-connection-string>
-   PORT=<your-port-number>
-   JWT_SECRET=<your-secret>
-   ```
+# Install backend dependencies
+cd ../backend
+npm install
+```
 
-5. Start the development server:
-   ```bash
-   npm start
-   ```
+3. Set up environment variables:
+Create `.env` files in both frontend and backend directories with necessary configurations.
 
-6. Access the deployed version at:   [DEMO](https://cheatcode-us36.onrender.com/)
+4. Start the development servers:
+```bash
+# Start backend server
+cd backend
+npm start
 
----
+# In a new terminal, start frontend server
+cd frontend
+npm start
+```
 
-## Usage
+## 🌟 Usage
 
-1. **Home Page:** Navigate through the home page to explore features.
-2. **Questions Page:** Solve coding problems and track your progress.
-3. **Courses Page:** View and purchase courses.
-   
----
+After starting both servers:
+1. Frontend will be available at: `http://localhost:3000`
+2. Backend API will be available at: `http://localhost:5000`
 
-## Future Enhancements
+## 📝 API Documentation
 
-- Add support for user analytics and performance tracking.
-- Integrate additional payment options for course purchases.
-- Implement advanced search and filtering for questions.
+Detailed API documentation will be available at `/api/docs` once the server is running.
 
----
+## 🤝 Contributing
 
+Contributions are welcome! Please feel free to submit a Pull Request.
 
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Vansh Sharma**
+- GitHub: [@itsvanshsharma](https://github.com/itsvanshsharma)
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped this project grow
+- Special thanks to the open-source community
+
+## 📞 Contact
+
+For any queries or suggestions, please feel free to reach out through GitHub issues. 
